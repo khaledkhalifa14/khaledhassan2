@@ -1,0 +1,43 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<html>
+<head>
+
+    {% load staticfiles %} <!-- Instruct Django to load static files -->
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
+<body style="background-color:cornsilk;">
+    <span class="message">{{ message }}</span>{{ content }}
+</body>
+</html>
+<div class="jumbotron">
+    <h1 style="color:darkslateblue"><b>Khaled Hassan</b></h1>
+    {% load static %}
+    <img src="{% static "app/Main.jpg" %}" alt="My image"/>
+
+    <p class="lead" style="color:orangered"><b>Khaed Hassan, is a professional HR-Admin officer,born in Saudi Arabia, for Egyptian parents in 1983.and working as HR Managr,PR proffessional, and web developer.</b></p>
+    <p><a href="{% url 'about' %}" class="btn btn-primary btn-large">see more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Professional life </h3>
+        
+        <p><a href="{% url 'about' %}"class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h3>Skilles and Hobbies</h3>
+        
+        <p><a href="{% url 'skills' %}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h3>Life and Achievement</h3>
+        
+        <p><a href="{% url 'life' %}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
