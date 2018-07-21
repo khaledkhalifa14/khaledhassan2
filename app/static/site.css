@@ -1,0 +1,35 @@
+﻿{
+    % load static %
+}
+
+.message {
+    font-weight: 600;
+    color: blue;
+}
+.navbar {
+    background-color:  darkslateblue;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+    padding: 8px 5px 8px 5px;
+}
+
+    .navbar a {
+        text-decoration: wavy;
+        color: inherit;
+    }
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

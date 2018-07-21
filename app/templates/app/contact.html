@@ -1,0 +1,29 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+<title>Contacts</title>
+    {% load staticfiles %} <!-- Instruct Django to load static files -->
+<link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
+</head>
+<body style="background-color: cornsilk;">
+
+    
+</body>
+</html>
+<h2><b>Contacts and Address.</b></h2>
+
+
+    <address style="color:orangered">
+        El Haram, Diaa ST. Building 61<br />
+        Cairo, Egypt.<br />
+        <abbr title="Phone">Mobile:</abbr>
+        +201008872300
+    </address>
+
+    <address>
+        <strong>Contact1:</strong> <a href="khaled.hssn@outlook.com">khaled.hssn@outlook.com</a><br />
+        <strong>Contact2:</strong> <a href="khalifa1887@gmail.com">khalifa1887@gmail.com</a>
+    </address>
+
+
+    {% endblock %}
